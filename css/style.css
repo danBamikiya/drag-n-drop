@@ -1,0 +1,106 @@
+/*----------  Start Global Styling  ----------*/
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: darkslategray;
+	font-family: 'Lobster', sans-serif;
+	font-size: 16px;
+}
+
+/*----------  End Global Styling  ----------*/
+
+/*----------  Start Header Styling  ----------*/
+header {
+	margin: 20px 0 20px 0;
+}
+
+.title {
+	font-size: 4rem;
+	position: relative;
+	width: fit-content;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/* title-2 */
+.title-2-color {
+	color: rgb(208, 228, 97);
+	text-shadow: 0 0 10px rgb(164, 192, 8);
+}
+
+.title-2-color::after {
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	color: rgb(228, 228, 21);
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+}
+
+.title-2-color::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+	opacity: 0.5;
+	background-color: rgb(179, 179, 8);
+	filter: blur(20px);
+}
+
+/*----------  End Header Styling  ----------*/
+
+/*----------  Start Boxes Styling  ----------*/
+.wrapper {
+	margin-top: 100px;
+	position: relative;
+	width: fit-content;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/* image object */
+.fill {
+	background-image: url('https://source.unsplash.com/random/150*150');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	height: 150px;
+	width: 150px;
+	top: 5px;
+	left: 5px;
+	cursor: pointer;
+}
+
+.empty {
+	display: inline-block;
+	height: 160px;
+	width: 160px;
+	margin: 10px;
+	border: 2px blue solid;
+	background-color: white;
+}
+
+.hold {
+	border: solid #ccc 3px;
+}
+
+.hovered {
+	background-color: #f4f4f4;
+	border-style: dashed;
+}
+
+.invisible {
+	display: none;
+}
+
+/*----------  End Boxes Styling  ----------*/
